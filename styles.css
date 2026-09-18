@@ -1,13 +1,13 @@
-h1:site-title{
+h1 {
   color: #6b0387;
   font-family: Bookman;
   letter-spacing: -5px;
   text-align: center;
   font-size: 60px;
   overflow: hidden;
-  }
+}
 
-h1:article-title{
+h2 {
   color: #1f8703;
   font-family: Bookman;
   letter-spacing: -5px;
@@ -18,7 +18,7 @@ h1:article-title{
   margin-left: 165px;
 }
 
-figure img{
+figure img {
   height: 450px;
   width: auto;
   float: left;
@@ -28,11 +28,31 @@ figure img{
   overflow: hidden;
 }
 
-body{
+body {
   background-color: #fae8ff;
 }
 
-article p{
+/* Shared class for both content sections */
+.content-box {
+  width: 70%;
+  height: 450px;
+  padding: 20px;
+  margin: 30px;
+}
+
+/* Unique styling for the About Me section */
+#about-me {
+  background-color: #e8fce2;
+  border: 5px dotted #6b0387;
+}
+
+/* Unique styling for the Interests section */
+#interests {
+  background-color: #fae8ff;
+  border: 5px dotted #1f8703;
+}
+
+article p {
   color: #585856;
   font-family: Georgia;
   text-align: left;
@@ -43,7 +63,7 @@ article p{
   margin-right: 300px;
 }
 
-article p::first-letter{
+article p::first-letter {
   color: #6b0387;
   background-color: #fae8ff;
   border-radius: 2px;
@@ -54,7 +74,7 @@ article p::first-letter{
   float: left;
 }
 
-article img{
+article img {
   height: 400px;
   text-wrap: wrap;
   float: right;
@@ -62,17 +82,15 @@ article img{
   margin-left: 20px;
   margin-top: 20px;
   border: 2.5px solid #6b0387;
-  
 }
 
-nav ul{
+nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  
 }
 
-nav ul li a{
+nav ul li a {
   color: #072001;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
@@ -81,20 +99,20 @@ nav ul li a{
   letter-spacing: -1px;
 }
 
-nav ul li{
+nav ul li {
   background-color: #e8fce2;
   padding: 10px;
   outline: #6b0387 dotted;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   text-decoration-line: line-through;
   text-decoration-style: wavy;
   text-decoration-thickness: 4px;
   text-decoration-color: #6b0387;
 }
 
-header a{
+header a {
   color: #6b0387;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
@@ -103,10 +121,7 @@ header a{
   justify-content: center;
 }
 
-header a:hover{
+header a:hover {
   text-decoration-line: underline;
   text-decoration-style: double;
 }
-
-
-
