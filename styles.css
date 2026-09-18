@@ -108,5 +108,16 @@ header a:hover{
   text-decoration-style: double;
 }
 
+/* Exercise 04 class and box model */
+.content-box {
+  width: 800px;
+  height: 500px;
+  padding: 10px;
+  margin: 20px;
+}
 
+/* Exercise 04 ID */
+#about-me {
+  color: #585856;
+}
 
