@@ -1,17 +1,13 @@
-body {
-  background-color: #fae8ff;
-}
-
-h1 {
+h1:site-title{
   color: #6b0387;
   font-family: Bookman;
   letter-spacing: -5px;
   text-align: center;
   font-size: 60px;
   overflow: hidden;
-}
+  }
 
-h2 {
+h1:article-title{
   color: #1f8703;
   font-family: Bookman;
   letter-spacing: -5px;
@@ -22,7 +18,7 @@ h2 {
   margin-left: 165px;
 }
 
-figure img {
+figure img{
   height: 450px;
   width: auto;
   float: left;
@@ -32,7 +28,11 @@ figure img {
   overflow: hidden;
 }
 
-article p {
+body{
+  background-color: #fae8ff;
+}
+
+article p{
   color: #585856;
   font-family: Georgia;
   text-align: left;
@@ -43,7 +43,7 @@ article p {
   margin-right: 300px;
 }
 
-article p::first-letter {
+article p::first-letter{
   color: #6b0387;
   background-color: #fae8ff;
   border-radius: 2px;
@@ -54,28 +54,59 @@ article p::first-letter {
   float: left;
 }
 
-article img {
+article img{
   height: 400px;
+  text-wrap: wrap;
   float: right;
   margin-right: 100px;
   margin-left: 20px;
   margin-top: 20px;
   border: 2.5px solid #6b0387;
+  
 }
 
-/* Exercise 04 class and box model */
-.box-example {
-  width: 300px;
-  height: 50px;
-  padding: 20px;
-  margin: 20px;
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+nav ul li a{
+  color: #072001;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+nav ul li{
   background-color: #e8fce2;
-  border: 5px dotted #6b0387;
-  color: #585856;
-  font-family: Georgia;
+  padding: 10px;
+  outline: #6b0387 dotted;
 }
 
-/* Exercise 04 ID */
-#about-me {
-  background-color: #fae8ff;
+nav ul li a:hover{
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #6b0387;
 }
+
+header a{
+  color: #6b0387;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: center;
+}
+
+header a:hover{
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+
+
