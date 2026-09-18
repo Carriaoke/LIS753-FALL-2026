@@ -32,24 +32,20 @@ body {
   background-color: #fae8ff;
 }
 
-/* Shared class for both content sections */
 .content-box {
-  width: 70%;
-  height: 450px;
+  width: 60%;
+  height: 350px;
   padding: 20px;
   margin: 30px;
 }
 
-/* Unique styling for the About Me section */
 #about-me {
   background-color: #e8fce2;
-  border: 5px dotted #6b0387;
 }
 
-/* Unique styling for the Interests section */
 #interests {
   background-color: #fae8ff;
-  border: 5px dotted #1f8703;
+}
 }
 
 article p {
