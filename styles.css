@@ -1,10 +1,13 @@
+body {
+  background-color: #fae8ff;
+}
+
 h1 {
   color: #6b0387;
   font-family: Bookman;
   letter-spacing: -5px;
   text-align: center;
   font-size: 60px;
-  overflow: hidden;
 }
 
 h2 {
@@ -23,30 +26,27 @@ figure img {
   width: auto;
   float: left;
   margin-right: 20px;
+  margin-bottom: 20px;
   border: 15px dotted #6b0387;
   padding: 8px;
-  overflow: hidden;
 }
 
-body {
-  background-color: #fae8ff;
-}
-
-/* Exercise 04: class and box model */
+/* Exercise 04 class + box model */
 .content-box {
-  width: 60%;
-  height: 350px;
+  width: 700px;
+  height: 300px;
   padding: 20px;
   margin: 30px;
 }
 
-/* Exercise 04: unique ID styling */
+/* Exercise 04 IDs */
 #about-me {
   background-color: #e8fce2;
 }
 
 #interests {
   background-color: #fae8ff;
+  clear: both;
 }
 
 article p {
@@ -54,10 +54,8 @@ article p {
   font-family: Georgia;
   text-align: left;
   background-color: #e8fce2;
-  overflow: hidden;
   border: 5px #585856 dotted;
   padding: 40px;
-  margin-right: 20px;
 }
 
 article p::first-letter {
@@ -72,53 +70,10 @@ article p::first-letter {
 }
 
 article img {
-  height: 400px;
-  text-wrap: wrap;
+  height: 200px;
+  width: auto;
   float: right;
-  margin-right: 20px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
   border: 2.5px solid #6b0387;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav ul li a {
-  color: #072001;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration: none;
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
-nav ul li {
-  background-color: #e8fce2;
-  padding: 10px;
-  outline: #6b0387 dotted;
-}
-
-nav ul li a:hover {
-  text-decoration-line: line-through;
-  text-decoration-style: wavy;
-  text-decoration-thickness: 4px;
-  text-decoration-color: #6b0387;
-}
-
-header a {
-  color: #6b0387;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration: none;
-  text-transform: lowercase;
-  display: flex;
-  justify-content: center;
-}
-
-header a:hover {
-  text-decoration-line: underline;
-  text-decoration-style: double;
 }
