@@ -8,6 +8,7 @@ h1 {
   letter-spacing: -5px;
   text-align: center;
   font-size: 60px;
+  overflow: hidden;
 }
 
 h2 {
@@ -26,27 +27,27 @@ figure img {
   width: auto;
   float: left;
   margin-right: 20px;
-  margin-bottom: 20px;
   border: 15px dotted #6b0387;
   padding: 8px;
+  overflow: hidden;
 }
 
-/* Exercise 04 class + box model */
+/* Exercise 04 class and box model */
 .content-box {
-  width: 700px;
-  height: 300px;
-  padding: 20px;
-  margin: 30px;
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px;
 }
 
-/* Exercise 04 IDs */
+/* Exercise 04 ID */
 #about-me {
-  background-color: #e8fce2;
+  color: #585856;
 }
 
+/* Exercise 04 ID */
 #interests {
-  background-color: #fae8ff;
-  clear: both;
+  color: #585856;
 }
 
 article p {
@@ -54,8 +55,10 @@ article p {
   font-family: Georgia;
   text-align: left;
   background-color: #e8fce2;
+  overflow: hidden;
   border: 5px #585856 dotted;
   padding: 40px;
+  margin-right: 300px;
 }
 
 article p::first-letter {
@@ -70,10 +73,10 @@ article p::first-letter {
 }
 
 article img {
-  height: 200px;
-  width: auto;
+  height: 400px;
   float: right;
+  margin-right: 100px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-top: 20px;
   border: 2.5px solid #6b0387;
 }
