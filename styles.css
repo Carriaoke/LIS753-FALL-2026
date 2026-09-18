@@ -32,6 +32,7 @@ body {
   background-color: #fae8ff;
 }
 
+/* Exercise 04: class and box model */
 .content-box {
   width: 60%;
   height: 350px;
@@ -39,13 +40,13 @@ body {
   margin: 30px;
 }
 
+/* Exercise 04: unique ID styling */
 #about-me {
   background-color: #e8fce2;
 }
 
 #interests {
   background-color: #fae8ff;
-}
 }
 
 article p {
@@ -56,7 +57,7 @@ article p {
   overflow: hidden;
   border: 5px #585856 dotted;
   padding: 40px;
-  margin-right: 300px;
+  margin-right: 20px;
 }
 
 article p::first-letter {
@@ -74,7 +75,7 @@ article img {
   height: 400px;
   text-wrap: wrap;
   float: right;
-  margin-right: 100px;
+  margin-right: 20px;
   margin-left: 20px;
   margin-top: 20px;
   border: 2.5px solid #6b0387;
