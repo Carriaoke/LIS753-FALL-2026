@@ -32,24 +32,6 @@ figure img {
   overflow: hidden;
 }
 
-/* Exercise 04 class and box model */
-.content-box {
-  width: 600px;
-  height: 200px;
-  padding: 10px;
-  margin: 20px;
-}
-
-/* Exercise 04 ID */
-#about-me {
-  color: #585856;
-}
-
-/* Exercise 04 ID */
-#interests {
-  color: #585856;
-}
-
 article p {
   color: #585856;
   font-family: Georgia;
@@ -79,4 +61,21 @@ article img {
   margin-left: 20px;
   margin-top: 20px;
   border: 2.5px solid #6b0387;
+}
+
+/* Exercise 04 class and box model */
+.box-example {
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #e8fce2;
+  border: 5px dotted #6b0387;
+  color: #585856;
+  font-family: Georgia;
+}
+
+/* Exercise 04 ID */
+#about-me {
+  background-color: #fae8ff;
 }
