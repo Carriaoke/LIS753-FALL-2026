@@ -23,7 +23,7 @@ h1{
 
 .about-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
   max-width: 1000px;
   margin: 40px auto;
