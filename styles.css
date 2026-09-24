@@ -23,7 +23,11 @@ h2{
   margin-top: 0;
 }
 
-figure img{
+#about-me {
+  color: #6b0387;
+}
+
+.profile-image{
   height: 450px;
   width: auto;
   float: left;
@@ -62,7 +66,7 @@ article p::first-letter{
   float: left;
 }
 
-article img{
+.article-image{
   height: 400px;
   text-wrap: wrap;
   float: right;
@@ -102,18 +106,25 @@ nav ul li a:hover{
   text-decoration-color: #6b0387;
 }
 
-header a{
-  color: #6b0387;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration: none;
-  text-transform: lowercase;
+.info-box {
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #e8fce2;
+  
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  
+  border: 5px #6b0387;
+  border-style: double;
+  border-radius: 25px;
+  
   display: flex;
   justify-content: center;
+  align-items: center;
+  
 }
-
-header a:hover{
-  text-decoration-line: underline;
-  text-decoration-style: double;
-}
-
-
