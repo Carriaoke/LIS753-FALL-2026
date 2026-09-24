@@ -1,17 +1,21 @@
-h1:site-title{
+h1{
   color: #6b0387;
   font-family: Bookman;
   letter-spacing: -5px;
   text-align: center;
   font-size: 60px;
+  font-style: normal;
+  font-weight: bold;
   overflow: hidden;
   }
 
-h1:article-title{
+h2{
   color: #1f8703;
   font-family: Bookman;
   letter-spacing: -5px;
   font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
   text-decoration-style: wavy;
   text-decoration-line: underline;
   text-transform: lowercase;
@@ -35,6 +39,9 @@ body{
 article p{
   color: #585856;
   font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
   text-align: left;
   background-color: #e8fce2;
   overflow: hidden;
