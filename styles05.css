@@ -1,1 +1,148 @@
+h1{
+  color: #6b0387;
+  font-family: Bookman;
+  letter-spacing: -2px;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 5px;
+  }
 
+.tagline {
+  color: #585856;
+  font-family: Bookman;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+h2{
+  color: #1f8703;
+  font-family: Bookman;
+  letter-spacing: -3px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h2::before {
+  content: "♥";
+  color: #6b0387;
+  margin-right: 8px;
+  font-size: 0.7em;
+}
+
+#about-me {
+  color: #6b0387;
+}
+
+#about-me::before {
+  color: #1f8703;
+}
+
+.profile-image {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+body{
+  background-color: #fae8ff;
+}
+
+article p {
+  color: #585856;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.7;
+
+  background-color: #e8fce2;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 4px solid #6b0387;
+}
+
+article p::first-letter{
+  color: #6b0387;
+  background-color: #fae8ff;
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 #6b0387;
+  font-size: 200%;
+  padding: 6px 3px;
+  margin-right: 6px;
+  float: left;
+}
+
+.article-image {
+  width: 200px;
+  height: auto;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;  
+}
+
+nav ul li a {
+  color: #6b0387;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+nav ul li{
+  padding: 5px;
+}
+
+nav ul li a:hover{
+  color: #1f8703;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+footer p {
+  color: #6b0387;
+  font-family: Bookman;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
