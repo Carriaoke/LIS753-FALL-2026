@@ -119,8 +119,7 @@ nav ul li a:hover{
   font-size: 16px;
   text-align: center;
   
-  border: 5px #6b0387;
-  border-style: double;
+  border: 5px double #6b0387;
   border-radius: 25px;
   
   display: flex;
