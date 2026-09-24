@@ -1,0 +1,119 @@
+h1{
+  color: #6b0387;
+  font-family: Bookman;
+  letter-spacing: -5px;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: bold;
+  overflow: hidden;
+  }
+
+h2{
+  color: #1f8703;
+  font-family: Bookman;
+  letter-spacing: -5px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+  margin-left: 165px;
+  margin-top: 0;
+}
+
+figure img{
+  height: 450px;
+  width: auto;
+  float: left;
+  margin-right: 20px;
+  border: 15px dotted #6b0387;
+  padding: 8px;
+  overflow: hidden;
+}
+
+body{
+  background-color: #fae8ff;
+}
+
+article p{
+  color: #585856;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  background-color: #e8fce2;
+  overflow: hidden;
+  border: 5px #585856 dotted;
+  padding: 40px;
+  margin-right: 300px;
+}
+
+article p::first-letter{
+  color: #6b0387;
+  background-color: #fae8ff;
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 #6b0387;
+  font-size: 200%;
+  padding: 6px 3px;
+  margin-right: 6px;
+  float: left;
+}
+
+article img{
+  height: 400px;
+  text-wrap: wrap;
+  float: right;
+  margin-right: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 2.5px solid #6b0387;
+  
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+nav ul li a{
+  color: #072001;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+nav ul li{
+  background-color: #e8fce2;
+  padding: 10px;
+  outline: #6b0387 dotted;
+}
+
+nav ul li a:hover{
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #6b0387;
+}
+
+header a{
+  color: #6b0387;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: center;
+}
+
+header a:hover{
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+
