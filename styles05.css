@@ -101,6 +101,25 @@ article p::first-letter{
   border-radius: 12px;
 }
 
+nav::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 8px;
+  margin: 10px auto 0;
+
+  background:
+    radial-gradient(circle at left, #1f8703 4px, transparent 5px),
+    radial-gradient(circle at right, #1f8703 4px, transparent 5px),
+    linear-gradient(
+      to bottom,
+      transparent 3px,
+      #1f8703 3px,
+      #1f8703 5px,
+      transparent 5px
+    );
+}
+
 nav ul{
   list-style: none;
   display: flex;
