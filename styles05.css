@@ -109,8 +109,8 @@ nav::after {
   margin: 10px auto 0;
 
   background:
-    radial-gradient(circle at left, #1f8703 4px, transparent 5px),
-    radial-gradient(circle at right, #1f8703 4px, transparent 5px),
+    radial-gradient(circle at 5px center, #1f8703 4px, transparent 5px),
+    radial-gradient(circle at calc(100% - 5px) center, #1f8703 4px, transparent 5px),
     linear-gradient(
       to bottom,
       transparent 3px,
