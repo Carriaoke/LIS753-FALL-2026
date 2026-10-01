@@ -21,7 +21,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>Book Club</td>
+          <td>Community Book Club</td>
           <td>Oct. 8</td>
           <td>6:30 PM</td>
           <td>Room A</td>
@@ -57,5 +57,38 @@
         </tr>
       </tbody>      
     </table>
+    
+    <h2>Register for an Event</h2>
+    <form>
+      <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      </div>
+     <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email">
+    </div>
+      <div>
+        <label for="program">Program</label>
+        <select id="program" name="program">
+        <option value="book-club">Community Book Club</option>
+        <option value="story-time">Family Story Time</option>
+        <option value="genealogy">Genealogy Workshop</option>
+        <option value="3d-printing">Intro to 3D Printing</option>
+        <option value="history-talk">Local History Talk</option>
+        </select>
+      </div>
+      <div>
+        <input type="radio" id="in-person" name="attendance" value="In Person">
+        <label for="in-person">In Person</label>
+      </div>
+      <div>
+        <input type="radio" id="online" name="attendance" value="Online">
+        <label for="online">Online</label>
+      </div>
+      <div>
+        <input type="submit" value="Register">
+      </div>      
+    </form>
   </body>
 </html>
