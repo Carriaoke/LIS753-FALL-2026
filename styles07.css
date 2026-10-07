@@ -167,6 +167,12 @@ select:focus {
   outline-offset: 2px;
 }
 
+input[type="radio"]:focus-visible,
+input[type="submit"]:focus-visible {
+  outline: 3px solid #1f8703;
+  outline-offset: 3px;
+}
+
 /* Radio buttons */
 
 input[type="radio"] {
