@@ -366,31 +366,54 @@ input[type="radio"] {
   }
 }
 
-/* Wrapping page links stay accessible at narrow widths. */
+/* Responsive navigation styled to match the program and registration cards. */
+nav {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  padding: 12px;
+  background-color: #f3dbf4;
+  border: 1px solid #d9b8df;
+  border-radius: 22px;
+  box-shadow: 0 5px 16px rgba(107, 3, 135, 0.08);
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 16px;
+  gap: 10px;
   list-style: none;
   padding: 0;
-  margin: 0 0 24px;
+  margin: 0;
+}
+
+nav li {
+  flex: 1 1 150px;
+  min-width: 0;
 }
 
 nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 22px;
-  min-height: 44px;
+  min-height: 48px;
+  padding: 12px 18px;
   background-color: white;
   color: #6b0387;
-  border: 2px solid #c9b5d1;
-  border-radius: 999px;
-  font-weight: bold;
+  border: 1px solid #d9b8df;
+  border-radius: 13px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
   text-decoration: none;
-  box-shadow: 0 3px 8px rgba(88, 88, 86, 0.08);
+  box-shadow: 0 2px 4px rgba(107, 3, 135, 0.06);
   transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+nav li:nth-child(2) a {
+  background-color: #e8fce2;
+  color: #256c14;
+  border-color: #c2dfb9;
 }
 
 nav li:last-child a {
@@ -400,8 +423,13 @@ nav li:last-child a {
 }
 
 nav a:hover {
-  background-color: #e8fce2;
-  border-color: #1f8703;
+  background-color: #f5eafa;
+  border-color: #6b0387;
+}
+
+nav li:nth-child(2) a:hover {
+  background-color: #d8f2cf;
+  border-color: #256c14;
 }
 
 nav li:last-child a:hover {
@@ -415,11 +443,21 @@ nav a:focus-visible {
 }
 
 @media (max-width: 600px) {
+  nav {
+    margin-bottom: 24px;
+    padding: 10px;
+    border-radius: 18px;
+  }
+
   nav ul {
-    gap: 10px;
+    gap: 8px;
+  }
+
+  nav li {
+    flex-basis: 120px;
   }
 
   nav a {
-    padding: 10px 16px;
+    padding: 10px 12px;
   }
 }
