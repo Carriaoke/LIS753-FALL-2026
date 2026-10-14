@@ -14,8 +14,16 @@
     <h1>Library Events</h1>
     <p>Community programs for learning, creating, and connecting</p>
     </header>
+    <nav aria-label="Page navigation">
+      <ul>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#visit">Plan Your Visit</a></li>
+        <li><a href="#registration">Register</a></li>
+      </ul>
+    </nav>
     <main>
-  <div class="programs">
+  <div class="programs" id="programs">
+    <div class="table-scroll" role="region" aria-label="October programming schedule; scroll horizontally to view all columns" tabindex="0">
     <table>
       <caption>October Programming Schedule</caption>
       <thead>
@@ -65,15 +73,16 @@
         </tr>
       </tbody>      
     </table>
+    </div>
 
-  <aside>
+  <aside id="visit">
     <h2>Plan Your Visit</h2>
     <p>Questions about a program? Contact the library at 630-555-1234.</p>
     <p>Please arrive 10 minutes before your scheduled program.</p>
   </aside>
     </div>
 
-<section class="registration">
+<section class="registration" id="registration">
   <h2>Register for an Event</h2>
     <form>
       <div>
