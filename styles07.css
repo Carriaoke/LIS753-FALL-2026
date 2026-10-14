@@ -378,15 +378,48 @@ nav ul {
 }
 
 nav a {
-  display: block;
-  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 22px;
   min-height: 44px;
+  background-color: white;
   color: #6b0387;
+  border: 2px solid #c9b5d1;
+  border-radius: 999px;
   font-weight: bold;
-  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 3px 8px rgba(88, 88, 86, 0.08);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-nav a:hover,
-nav a:focus-visible {
+nav li:last-child a {
+  background-color: #a30b75;
+  border-color: #a30b75;
+  color: white;
+}
+
+nav a:hover {
   background-color: #e8fce2;
+  border-color: #1f8703;
+}
+
+nav li:last-child a:hover {
+  background-color: #6b0387;
+  border-color: #6b0387;
+}
+
+nav a:focus-visible {
+  outline: 3px solid #1f8703;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 10px 16px;
+  }
 }
