@@ -1,0 +1,463 @@
+body {
+  background-color: #fae8ff;
+  color: #585856;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+
+main {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.programs {
+  flex: 2;
+}
+
+.registration {
+  flex: 1;
+}
+
+/* Main heading */
+
+h1 {
+  color: #a30b75;
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0 25px;
+  border-bottom: 3px solid #6b0387;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  color: #1f8703;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.programs caption,
+.registration h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 28px;
+  color: #6b0387;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 15px;
+  margin: 0;
+}
+
+.programs caption {
+  color: #1f8703;
+}
+
+th {
+  background-color: #6b0387;
+  color: white;
+  font-family: "DM Serif Display", serif;
+  padding: 15px;
+  text-align: left;
+
+}
+
+thead th:first-child {
+  border-top-left-radius: 15px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 15px;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #c9b5d1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e8fce2;
+}
+
+tbody tr:hover {
+  background-color: #f5d7ef;
+}
+
+/* Form heading */
+
+h2 {
+  color: #6b0387;
+  font-family: "DM Serif Display", serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+/* Form */
+
+form {
+  width: 100%;
+  padding: 30px;
+  background-color: #e8fce2;
+  border: 2px solid #c9b5d1;
+  border-top: 6px solid #a30b75;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(88, 88, 86, 0.12);
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+
+label {
+  color: #585856;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+/* Text fields and dropdown */
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #c9b5d1;
+  border-radius: 8px;
+  background-color: white;
+  color: #585856;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Input focus */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: 2px solid #a30b75;
+  outline-offset: 2px;
+}
+
+input[type="radio"]:focus-visible,
+input[type="submit"]:focus-visible {
+  outline: 3px solid #1f8703;
+  outline-offset: 3px;
+}
+
+/* Radio buttons */
+
+input[type="radio"] {
+  margin-right: 6px;
+  accent-color: #6b0387;
+}
+
+fieldset {
+  border: 1px solid #c9b5d1;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 0 0 20px;
+}
+
+legend {
+  color: #6b0387;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+fieldset div {
+  margin-bottom: 10px;
+}
+
+fieldset div:last-child {
+  margin-bottom: 0;
+}
+
+/* Submit button */
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #a30b75;
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 25px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #6b0387;
+}
+
+aside {
+  margin-top: 25px;
+  padding: 25px 30px;
+  background-color: white;
+  border: 2px solid #e8fce2;
+  border-left: 5px solid #1f8703;
+  border-radius: 15px;
+}
+
+aside h2 {
+  color: #1f8703;
+  text-align: left;
+  margin: 0 0 10px;
+}
+
+aside p {
+  margin: 5px 0;
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #c9b5d1;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #585856;
+}
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  .programs,
+  .registration {
+    width: 100%;
+  }
+}
+
+/* Keep flex items and controls inside the available width. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.programs,
+.registration,
+fieldset {
+  min-width: 0;
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-scroll:focus-visible {
+  outline: 3px solid #a30b75;
+  outline-offset: 3px;
+}
+
+table {
+  min-width: 580px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="submit"] {
+  min-height: 44px;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+input[type="radio"] {
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 24px;
+  }
+
+  main {
+    gap: 24px;
+  }
+
+  .programs,
+  .registration {
+    flex: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  header {
+    margin-bottom: 24px;
+    padding: 12px 0 20px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .programs caption,
+  .registration h2,
+  aside h2 {
+    font-size: 26px;
+  }
+
+  form,
+  aside {
+    padding: 20px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+
+  aside {
+    margin-top: 20px;
+  }
+}
+
+/* Responsive navigation styled to match the program and registration cards. */
+nav {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  padding: 12px;
+  background-color: #f3dbf4;
+  border: 1px solid #d9b8df;
+  border-radius: 22px;
+  box-shadow: 0 5px 16px rgba(107, 3, 135, 0.08);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  flex: 1 1 150px;
+  min-width: 0;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 18px;
+  background-color: white;
+  color: #6b0387;
+  border: 1px solid #d9b8df;
+  border-radius: 13px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(107, 3, 135, 0.06);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+nav li:nth-child(2) a {
+  background-color: #e8fce2;
+  color: #256c14;
+  border-color: #c2dfb9;
+}
+
+nav li:last-child a {
+  background-color: #a30b75;
+  border-color: #a30b75;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #f5eafa;
+  border-color: #6b0387;
+}
+
+nav li:nth-child(2) a:hover {
+  background-color: #d8f2cf;
+  border-color: #256c14;
+}
+
+nav li:last-child a:hover {
+  background-color: #6b0387;
+  border-color: #6b0387;
+}
+
+nav a:focus-visible {
+  outline: 3px solid #1f8703;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    margin-bottom: 24px;
+    padding: 10px;
+    border-radius: 18px;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+
+  nav li {
+    flex-basis: 120px;
+  }
+
+  nav a {
+    padding: 10px 12px;
+  }
+}
