@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles08.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Events</title>
+  </head>
+  <body>
+    <header>
+    <h1>Library Events</h1>
+    <p>Community programs for learning, creating, and connecting</p>
+    </header>
+    <nav aria-label="Page navigation">
+      <ul>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#visit">Plan Your Visit</a></li>
+        <li><a href="#registration">Register</a></li>
+      </ul>
+    </nav>
+    <main>
+  <div class="programs" id="programs">
+    <div class="table-scroll" role="region" aria-label="October programming schedule; scroll horizontally to view all columns" tabindex="0">
+    <table>
+      <caption>October Programming Schedule</caption>
+      <thead>
+          <tr>
+            <th scope="col">Program</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Location</th>
+            <th scope="col">Audience</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Community Book Club</td>
+          <td>Oct. 8</td>
+          <td>6:30 PM</td>
+          <td>Room A</td>
+          <td>Adults</td>
+        </tr>
+        <tr>
+          <td>Family Story Time</td>
+          <td>Oct. 10</td>
+          <td>10:00 AM</td>
+          <td>Children's Room</td>
+          <td>Families</td>
+        </tr>
+        <tr>
+          <td>Genealogy Workshop</td>
+          <td>Oct. 12</td>
+          <td>2:00 PM</td>
+          <td>Room B</td>
+          <td>Adults</td>
+        </tr>
+        <tr>
+          <td>Intro to 3D Printing</td>
+          <td>Oct. 15</td>
+          <td>6:00 PM</td>
+          <td>Makerspace</td>
+          <td>Teens & Adults</td>
+        </tr>
+        <tr>
+          <td>Local History Talk</td>
+          <td>Oct. 18</td>
+          <td>1:00 PM</td>
+          <td>Auditorium</td>
+          <td>Everyone</td>
+        </tr>
+      </tbody>      
+    </table>
+    </div>
+
+  <aside id="visit">
+    <h2>Plan Your Visit</h2>
+    <p>Questions about a program? Contact the library at 630-555-1234.</p>
+    <p>Please arrive 10 minutes before your scheduled program.</p>
+  </aside>
+    </div>
+
+<section class="registration" id="registration">
+  <h2>Register for an Event</h2>
+    <form>
+      <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      </div>
+     <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email">
+    </div>
+      <div>
+        <label for="program">Program</label>
+        <select id="program" name="program">
+        <option value="book-club">Community Book Club</option>
+        <option value="story-time">Family Story Time</option>
+        <option value="genealogy">Genealogy Workshop</option>
+        <option value="3d-printing">Intro to 3D Printing</option>
+        <option value="history-talk">Local History Talk</option>
+        </select>
+      </div>
+      <fieldset>
+  <legend>Attendance</legend>
+
+  <div>
+    <input type="radio" id="in-person" name="attendance" value="In Person">
+    <label for="in-person">In Person</label>
+  </div>
+
+  <div>
+    <input type="radio" id="online" name="attendance" value="Online">
+    <label for="online">Online</label>
+  </div>
+</fieldset>
+      
+      <div>
+        <input type="submit" value="Register">
+      </div>      
+    </form>
+      </section>
+    </main>
+
+  <footer>
+    <p>Bloomingdale Public Library | Community Programs</p>
+  </footer>
+
+</body>
+</html>
