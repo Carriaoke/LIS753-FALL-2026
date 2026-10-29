@@ -1,1 +1,36 @@
+body {
+  background-color: #f5f0fa;
+  color: #352344;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+}
 
+main {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #643a7c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #48265c;
+}
+
+button:focus-visible {
+  outline: 3px solid #352344;
+  outline-offset: 4px;
+}
+
+#recommendation {
+  margin-top: 24px;
+  line-height: 1.6;
+}
