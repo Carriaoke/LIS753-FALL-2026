@@ -1,36 +1,101 @@
-body {
-  background-color: #f5f0fa;
+/* Page background and layout */
+.book-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #eee4f7, #d8c3eb);
   color: #352344;
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 40px 20px;
 }
 
-main {
+/* Page heading */
+.book-page header {
+  margin-bottom: 28px;
+}
+
+.book-page h1 {
+  margin: 0 0 16px;
+  font-family: Georgia, serif;
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+}
+
+/* White content card */
+.book-page main {
+  box-sizing: border-box;
   max-width: 650px;
   margin: 0 auto;
+  padding: 36px;
+  background: #ffffff;
+  border: 1px solid #d8c3eb;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(53, 35, 68, 0.15);
 }
 
-button {
-  background-color: #643a7c;
-  color: white;
+.book-page main > p:first-child {
+  margin-top: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Recommendation button */
+.book-page button {
+  margin-top: 12px;
+  padding: 15px 26px;
   border: none;
-  border-radius: 8px;
-  padding: 12px 20px;
-  font-size: 1rem;
+  border-radius: 30px;
+  background: #643a7c;
+  color: #ffffff;
+  font: inherit;
+  font-weight: bold;
   cursor: pointer;
+  box-shadow: 0 5px 12px rgba(53, 35, 68, 0.2);
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-button:hover {
-  background-color: #48265c;
+.book-page button:hover {
+  background: #48265c;
+  transform: translateY(-2px);
 }
 
-button:focus-visible {
+.book-page button:focus-visible {
   outline: 3px solid #352344;
-  outline-offset: 4px;
+  outline-offset: 5px;
 }
 
-#recommendation {
-  margin-top: 24px;
-  line-height: 1.6;
+/* Book recommendation */
+.book-page #recommendation {
+  margin: 28px 0 0;
+  padding: 22px;
+  background: #f5f0fa;
+  border-left: 4px solid #643a7c;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* Hide the recommendation box until it has text */
+.book-page #recommendation:empty {
+  display: none;
+}
+
+/* Adjust spacing on phones */
+@media (max-width: 480px) {
+  .book-page {
+    padding: 36px 16px;
+  }
+
+  .book-page main {
+    padding: 24px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .book-page button {
+    transition: none;
+    transform: none;
+  }
 }
