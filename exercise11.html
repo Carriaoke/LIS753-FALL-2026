@@ -5,8 +5,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles09.css?v=2">
+    <link rel="stylesheet" href="styles11.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script11.js" defer></script>
     <title>Library Events</title>
   </head>
   <body>
@@ -33,6 +34,7 @@
             <th scope="col">Time</th>
             <th scope="col">Location</th>
             <th scope="col">Audience</th>
+            <th scope="col">Details</th>
           </tr>
       </thead>
       <tbody>
@@ -42,6 +44,11 @@
           <td>6:30 PM</td>
           <td>Room A</td>
           <td>Adults</td>
+          <td>
+              <button type="button" class="details-button" data-program="bookclub">
+              View details
+              </button>
+          </td>
         </tr>
         <tr>
           <td>Family Story Time</td>
@@ -49,6 +56,11 @@
           <td>10:00 AM</td>
           <td>Children's Room</td>
           <td>Families</td>
+          <td>
+              <button type="button" class="details-button" data-program="storytime">
+              View details
+              </button>
+          </td>
         </tr>
         <tr>
           <td>Genealogy Workshop</td>
@@ -56,6 +68,11 @@
           <td>2:00 PM</td>
           <td>Room B</td>
           <td>Adults</td>
+          <td>
+              <button type="button" class="details-button" data-program="genealogy">
+              View details
+              </button>
+          </td>
         </tr>
         <tr>
           <td>Intro to 3D Printing</td>
@@ -63,6 +80,11 @@
           <td>6:00 PM</td>
           <td>Makerspace</td>
           <td>Teens & Adults</td>
+          <td>
+              <button type="button" class="details-button" data-program="printing">
+              View details
+              </button>
+          </td>
         </tr>
         <tr>
           <td>Local History Talk</td>
@@ -70,9 +92,20 @@
           <td>1:00 PM</td>
           <td>Auditorium</td>
           <td>Everyone</td>
+          <td>
+              <button type="button" class="details-button" data-program="history">
+              View details
+              </button>
+          </td>
         </tr>
       </tbody>      
     </table>
+      <section id="program-details" aria-live="polite">
+        <h2>Program Details</h2>
+        <p id="details-text">
+  Select a program above to learn more about it!
+</p>
+      </section>
     </div>
 
   <aside id="visit">
