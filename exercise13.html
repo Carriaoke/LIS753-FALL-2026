@@ -151,7 +151,7 @@
       <h2>Register for an Event</h2>
       <p>Fields marked with an asterisk (*) are required.</p>
 
-      <form>
+      <form id="registration-form">
         <div>
           <label for="name">Name *</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -163,7 +163,7 @@
         </div>
 
         <div>
-          <label for="program">Program</label>
+          <label for="program">Program *</label>
           <select id="program" name="program" required>
             <option value="" selected disabled>Select a program...</option>
             <option value="bookclub">Community Book Club</option>
@@ -176,10 +176,10 @@
         </div>
 
         <fieldset>
-          <legend>Attendance</legend>
+          <legend>Attendance *</legend>
 
           <div>
-            <input type="radio" id="in-person" name="attendance" value="In Person">
+            <input type="radio" id="in-person" name="attendance" value="In Person" required>
             <label for="in-person">In Person</label>
           </div>
 
@@ -193,6 +193,7 @@
           <input type="submit" value="Register">
         </div>
       </form>
+      <p id="registration-confirmation" role="status" aria-live="polite" hidden></p>
     </section>
   </main>
 
