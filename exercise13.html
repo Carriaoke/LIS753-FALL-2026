@@ -1,26 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Library Events</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
 
+  <!-- Stylesheet and JavaScript -->
   <link rel="stylesheet" href="styles13.css">
   <script src="script13.js" defer></script>
 
-  <title>Library Events</title>
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
     <h1>Library Events</h1>
     <p>Community programs for learning, creating, and connecting</p>
   </header>
 
+  <!-- NAVIGATION -->
   <nav aria-label="Page navigation">
     <ul>
       <li><a href="#programs">Programs</a></li>
@@ -30,19 +34,17 @@
   </nav>
 
   <main>
+    <!-- PROGRAM SCHEDULE -->
     <div class="programs" id="programs">
-      
       <p class="scroll-hint">
-  <span aria-hidden="true">↔</span>
-  Swipe or scroll sideways to see all program details.
-</p>
-      
+        <span aria-hidden="true">↔</span>
+        Swipe or scroll sideways to see all program details.
+      </p>
+
       <div class="table-scroll"
            role="region"
            aria-label="October programming schedule; scroll horizontally to view all columns"
            tabindex="0">
-
-        
         <table>
           <caption>October Programming Schedule</caption>
           <thead>
@@ -125,6 +127,7 @@
         </table>
       </div>
 
+      <!-- PROGRAM DETAILS -->
       <section id="program-details" aria-live="polite">
         <h2>Program Details</h2>
         <p id="details-text">
@@ -135,6 +138,7 @@
         </button>
       </section>
 
+      <!-- PLAN YOUR VISIT -->
       <aside id="visit">
         <h2>Plan Your Visit</h2>
         <p>Questions about a program? Contact the library at 630-555-1234.</p>
@@ -142,6 +146,7 @@
       </aside>
     </div>
 
+    <!-- REGISTRATION FORM -->
     <section class="registration" id="registration">
       <h2>Register for an Event</h2>
       <p>Fields marked with an asterisk (*) are required.</p>
@@ -159,14 +164,14 @@
 
         <div>
           <label for="program">Program</label>
-<select id="program" name="program" required>
-  <option value="" selected disabled>Select a program...</option>
-  <option value="bookclub">Community Book Club</option>
-  <option value="storytime">Family Story Time</option>
-  <option value="genealogy">Genealogy Workshop</option>
-  <option value="printing">Intro to 3D Printing</option>
-  <option value="history">Local History Talk</option>
-</select>
+          <select id="program" name="program" required>
+            <option value="" selected disabled>Select a program...</option>
+            <option value="bookclub">Community Book Club</option>
+            <option value="storytime">Family Story Time</option>
+            <option value="genealogy">Genealogy Workshop</option>
+            <option value="printing">Intro to 3D Printing</option>
+            <option value="history">Local History Talk</option>
+          </select>
           <p id="selection-message" role="status" aria-live="polite" hidden></p>
         </div>
 
@@ -191,6 +196,7 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>Bloomingdale Public Library | Community Programs</p>
   </footer>
