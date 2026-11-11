@@ -50,3 +50,18 @@ registerButton.addEventListener("click", function() {
   });
   programDropdown.focus({ preventScroll: true });
 });
+
+// Confirm a valid form submission without sending or storing any data.
+const registrationForm = document.getElementById("registration-form");
+const registrationConfirmation = document.getElementById("registration-confirmation");
+
+registrationForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const programName = programDropdown.options[programDropdown.selectedIndex].text;
+
+  registrationConfirmation.textContent = "Thanks, " + name + "! You've requested a spot in " + programName + ". This is a demonstration, so no registration was submitted.";
+  registrationConfirmation.hidden = false;
+  registrationConfirmation.scrollIntoView({ behavior: "smooth", block: "nearest" });
+});
