@@ -456,6 +456,28 @@ input[type="submit"]:focus-visible {
   outline-offset: 3px;
 }
 
+/* BACK TO TOP LINK */
+.back-to-top {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 9px 16px;
+  border: 2px solid #6b0387;
+  border-radius: 8px;
+  color: #6b0387;
+  background-color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  background-color: #fae8ff;
+}
+
+.back-to-top:focus-visible {
+  outline: 3px solid #38343d;
+  outline-offset: 3px;
+}
+
 /* FOOTER */
 
 footer {
