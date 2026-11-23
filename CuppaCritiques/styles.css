@@ -243,3 +243,55 @@ footer p {
   margin: 0;
   border-radius: 0;
 }
+
+
+.book-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.book-shelf li {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  background: var(--blush);
+}
+
+.book-shelf li + li {
+  margin-top: 0;
+}
+
+.book-shelf a {
+  display: block;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+.book-shelf img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  margin: 0 0 0.85rem;
+  border-radius: 0.25rem;
+}
+
+.book-shelf a:hover img {
+  filter: brightness(0.92);
+}
+
+.book-shelf a span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.875rem;
+}
+
+.book-shelf p {
+  margin: 0.5rem 0 0;
+}
+
+.shelf-illustration {
+  width: min(100%, 19rem);
+}
