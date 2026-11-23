@@ -245,51 +245,79 @@ footer p {
 }
 
 
-.book-shelf {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
-  gap: 1rem;
-  padding: 0;
-  list-style: none;
+.shelf-table-wrap {
+  margin: 1rem 0 2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
 }
 
-.book-shelf li {
-  padding: 1rem;
-  border: 1px solid var(--border);
-  border-radius: 0.85rem;
+.shelf-table {
+  width: 100%;
+  border-spacing: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.shelf-table caption {
+  padding: 0.65rem;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+.shelf-table th,
+.shelf-table td {
+  padding: clamp(0.35rem, 2vw, 0.9rem);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.shelf-table thead {
+  background: var(--raspberry);
+  color: var(--cream);
+}
+
+.shelf-table tbody tr:nth-child(odd) {
   background: var(--blush);
 }
 
-.book-shelf li + li {
-  margin-top: 0;
+.shelf-table tbody td,
+.shelf-table tbody th {
+  border-bottom: 1px solid var(--border);
 }
 
-.book-shelf a {
-  display: block;
-  font-weight: bold;
-  line-height: 1.35;
+.shelf-table tbody tr:last-child > * {
+  border-bottom: 0;
 }
 
-.book-shelf img {
-  width: 100%;
+.shelf-table tbody a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.shelf-table img {
+  width: clamp(2.5rem, 10vw, 5rem);
   aspect-ratio: 2 / 3;
   object-fit: contain;
-  margin: 0 0 0.85rem;
-  border-radius: 0.25rem;
+  margin: 0;
+  border-radius: 0.2rem;
 }
 
-.book-shelf a:hover img {
-  filter: brightness(0.92);
-}
-
-.book-shelf a span {
+.shelf-table small {
   display: block;
-  margin-top: 0.3rem;
-  font-size: 0.875rem;
+  margin-top: 0.2rem;
 }
 
-.book-shelf p {
-  margin: 0.5rem 0 0;
+@media (max-width: 32rem) {
+  .shelf-table {
+    font-size: 0.85rem;
+  }
+
+  .shelf-table td {
+    overflow-wrap: anywhere;
+  }
 }
 
 .shelf-illustration {
