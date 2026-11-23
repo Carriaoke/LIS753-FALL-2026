@@ -1,0 +1,113 @@
+:root {
+  --blush: #fff1f3;
+  --soft-pink: #f3ced6;
+  --raspberry: #863b53;
+  --espresso: #422d29;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--blush);
+  color: var(--espresso);
+  font-family: system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+header,
+footer {
+  padding: 1.25rem;
+  background-color: var(--soft-pink);
+  text-align: center;
+}
+
+.site-name {
+  margin: 0 0 0.75rem;
+  font-family: Georgia, serif;
+  font-size: clamp(1.5rem, 5vw, 2.4rem);
+  font-weight: bold;
+}
+
+.site-name a {
+  color: var(--espresso);
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background-color: var(--raspberry);
+  color: white;
+}
+
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+a {
+  color: var(--raspberry);
+  text-underline-offset: 0.18em;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--espresso);
+  outline-offset: 3px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: white;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
