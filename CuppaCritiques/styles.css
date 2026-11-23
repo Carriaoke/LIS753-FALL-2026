@@ -224,3 +224,22 @@ footer p {
     padding-inline: 0.4rem;
   }
 }
+.book-rating {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.rating-cups {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.rating-cups img {
+  width: 1.75rem;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+}
